@@ -1,10 +1,12 @@
+// aine-forge-rule: reviewed
 import { useState } from 'react'
 import Header from '../components/Header'
 import FeatureCard from '../components/FeatureCard'
 import Counter from '../components/Counter'
+import { Footer } from '../components/Footer'
 import './Home.css'
 
-function Home() {
+export function Home() {
   const [features] = useState([
     {
       id: 1,
@@ -63,8 +65,8 @@ function Home() {
           <Counter initialValue={0} />
         </section>
       </main>
+
+      <Footer />
     </>
   )
 }
-
-export default Home

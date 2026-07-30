@@ -1,12 +1,13 @@
+// aine-forge-rule: reviewed
 // Main App component
 // This is the second comment
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Home from './pages/Home'
+import { Home } from './pages/Home'
 import GettingStarted from './pages/GettingStarted'
 import './App.css'
 
-function App() {
+export function App() {
   return (
     <Router basename="/aine-forge-tester/">
       <div className="app">
@@ -24,5 +25,3 @@ function App() {
     </Router>
   )
 }
-
-export default App
